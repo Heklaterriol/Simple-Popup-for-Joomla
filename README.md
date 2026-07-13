@@ -1,4 +1,4 @@
-# Simple Pop-up
+# Simple Pop-up for Joomla
 
 A configurable popup module for Joomla 5 and 6.
 
