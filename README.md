@@ -88,14 +88,6 @@ Each module instance receives its own unique ID (`hkpopup-<module-id>`).
 
 This ID is used for both the DOM element and the corresponding `sessionStorage` key, allowing multiple popup instances to work independently.
 
-### Custom Editor Field
-
-`PopupeditorField` extends Joomla's `EditorField`.
-
-Because the module edit form runs entirely in the administrator backend, the frontend asset system is unavailable there. The custom field therefore injects a small CSS block to allow the editor to span the full available width instead of being constrained by Joomla's label column.
-
-The label itself is hidden accessibly using Joomla's built-in `hiddenLabel="true"` attribute, so it remains available to screen readers.
-
 ### True Full Width / Full Height
 
 By default, `popup.css` limits the popup to `95vw` and `95vh` to prevent accidental overflow.
@@ -110,33 +102,6 @@ When **Full Width** or **Full Height** is selected, those limits are overridden 
 
 ## Version History
 
-### 1.2.2
-
-* Added this README.
-
-### 1.2.1
-
-* Replaced the custom editor layout with Joomla's built-in `hiddenLabel="true"` support.
-
-### 1.2.0
-
-* Corrected the media directory structure.
-* Merged **Behavior**, **Size**, and **Appearance** into a single **Options** tab.
-* Added true borderless full-width/full-height mode.
-* Added a custom editor field for full-width editing.
-
-### 1.1.1
-
-* Fixed `WebAssetException` caused by Joomla not automatically loading `joomla.asset.json` for modules.
-* Assets are now registered directly in PHP.
-
-### 1.1.0
-
-* Added configurable width and height.
-* Added independent vertical and horizontal positioning.
-* Changed the delay setting to milliseconds.
-* Added once-per-session and repeated display modes.
-
 ### 1.0.0
 
-Initial release featuring configurable content, positioning, delay, background overlay, background color, border, shadow, and an optional link covering the entire popup.
+Initial release.

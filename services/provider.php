@@ -1,9 +1,7 @@
 <?php
 
 /**
- * @package     Hekla.Module.Popup
- * @subpackage  mod_popup
- *
+ * @package     Simple Popup Module
  * @copyright   Copyright (C) 2026 Hekla. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
