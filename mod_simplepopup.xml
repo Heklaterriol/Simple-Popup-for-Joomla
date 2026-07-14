@@ -121,9 +121,9 @@
                     type="range"
                     label="MOD_SIMPLEPOPUP_FIELD_OVERLAY_OPACITY_LABEL"
                     description="MOD_SIMPLEPOPUP_FIELD_OVERLAY_OPACITY_DESC"
-                    default="55"
+                    default="60"
                     min="0"
-                    max="90"
+                    max="100"
                     step="5"
                     filter="integer"
                 />
@@ -240,6 +240,6 @@
         </fields>
     </config>
     <updateservers>
-        <server type="module" name="Simple Popup Module Update Site">https://raw.githubusercontent.com/Heklaterriol/Simple-Popup-for-Joomla/refs/heads/main/update_mod_simplepopup.xml</server>
+        <server type="extension" name="Simple Popup Module Update Site">https://raw.githubusercontent.com/Heklaterriol/Simple-Popup-for-Joomla/refs/heads/main/update_mod_simplepopup.xml</server>
     </updateservers>
 </extension>
