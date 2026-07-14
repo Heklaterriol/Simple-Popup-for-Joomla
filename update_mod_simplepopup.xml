@@ -19,9 +19,9 @@
         <maintainerurl>github.com/Heklaterriol/Simple-Popup-for-Joomla/</maintainerurl>
         <targetplatform name="joomla" version="^(5\.[4-9].*|6\..*)$"/>
         <php_minimum>8.1</php_minimum>
-        <sha256>7086b43d200e08fd4250d79b7e8605701b53e15988e305db75274e8957f3a3f6</sha256>
-        <sha384>d9874cf8d67f1680d125c9523570a7636e0f900907018aab29fa3a2aea3cbb3a20fa749019b69ed3c3b6e3459ca7d52e</sha384>
-        <sha512>db9133288032a35831048a5ef568ab085e487003cae4f230d881c6f0c7e58c7b8e96b9a9fd9038caff380c0ed2fdadb90324ea09014d7a4b1ffbcc60114a00ed</sha512>
+        <sha256>d1c0b626918b9cab00ee200a27c2a35d7b0125d03cac1c977f331adfd0d30729</sha256>
+        <sha384>6a4ddd790f7793e42a87a25691105c3de7a3fd0a01e28095a341d8ff003f2431e78c68e377d3eb409d942c1b0fa092d1</sha384>
+        <sha512>2db91ab79f21e256c42838c8935ad7ea57feedd53508bddf5ed688de4535650fed06bceca6948abfc87d909fa86ecc407e3e7f0046d37d998a90bd096f1c565e</sha512>
         <date>2026-07-14 18:00</date>
         <notes>Simple Popup Module v1.3 for Joomla! 5.4.x and Joomla! 6.x. Requires PHP 8.1 or newer. Configurable popup module for Joomla 5/6. Shows a popup with freely editable HTML content after an adjustable delay - as a centred modal, a bar at the top/bottom edge, or a panel anchored to one of the four corners/sides, with a dimmed page background.</notes>
         <changes>Add Joomla native update routine.</changes>
