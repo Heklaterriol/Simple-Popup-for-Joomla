@@ -239,4 +239,7 @@
             </fieldset>
         </fields>
     </config>
+    <updateservers>
+        <server type="module" name="Simple Popup Module Update Site">https://raw.githubusercontent.com/Heklaterriol/Simple-Popup-for-Joomla/refs/heads/main/update_mod_simplepopup.xml</server>
+    </updateservers>
 </extension>
