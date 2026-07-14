@@ -32,8 +32,7 @@
     </media>
 
     <config>
-        <fields name="params" addfieldprefix="Hekla\Module\Popup\Field">
-
+        <fields name="params">
             <fieldset name="basic" label="MOD_POPUP_FIELDSET_CONTENT">
 
                 <field
