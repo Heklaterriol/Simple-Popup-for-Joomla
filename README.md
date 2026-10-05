@@ -43,6 +43,7 @@ Then, under **Content → Site Modules**, create a new module of type
 | Field | Description |
 |---|---|
 | Width / height | each: automatic (fits content) / fixed in pixels / relative in % / full width or height (edge-to-edge) |
+| Max. width (pixels) | Only shown for width "Relative %": caps the relative width at a maximum in pixels (0 = no limit) |
 
 **Appearance**
 | Field | Description |
@@ -97,8 +98,8 @@ A few decisions that shaped the build:
   background, remember to also set a lighter text/link colour.
 
 ## Version history
-- **1.3.2** – Minor fixes.
-- **1.3.1** – Minor fixes.
+- **1.4.0** – New field "Max. width (pixels)" for relative widths: the popup scales
+  with the screen (%) but never becomes wider than the given pixel value.
 - **1.3.0** – Add Joomla native update routine.
 - **1.2.0** – minor fixes. Change of the mod structure and renaming to 
   eliminating the risk of confusion with other modules.

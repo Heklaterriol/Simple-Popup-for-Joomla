@@ -112,6 +112,16 @@ $vPad = $heightMode === 'full' ? 0 : 24;
 // would negate the desired 0-pixel margin, so it is overridden to 100% per 
 // instance (inline styles take precedence over the class rule in popup.css).
 $maxWidthCss  = $widthMode === 'full' ? '100%' : '95vw';
+
+// Relative width (%) can optionally be capped at a maximum in pixels
+// (0 = no cap). min() keeps the 95vw safety net on very small screens.
+if ($widthMode === 'percent') {
+    $widthMaxPx = max(0, (int) $params->get('width_max_px', 0));
+
+    if ($widthMaxPx > 0) {
+        $maxWidthCss = 'min(' . $widthMaxPx . 'px,95vw)';
+    }
+}
 $maxHeightCss = $heightMode === 'full' ? '100%' : '95vh';
 
 // Appearance
