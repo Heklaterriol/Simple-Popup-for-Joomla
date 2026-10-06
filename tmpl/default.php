@@ -9,7 +9,9 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Plugin\PluginHelper;
 
 /**
  * @var Joomla\Registry\Registry $params
@@ -34,7 +36,20 @@ if (!$wa->assetExists('script', 'mod_simplepopup.popup')) {
 
 $wa->useStyle('mod_simplepopup.popup')->useScript('mod_simplepopup.popup');
 
-$content         = (string) $params->get('content', '');
+$hkpopupContent  = (string) $params->get('content', '');
+
+// Module parameters are not run through content plugins by default (unlike
+// article text), so tags such as {emailcloak} would otherwise show up as
+// literal text. Mirrors the "Prepare Content" option of Joomla's own
+// mod_custom: opt-in, since it has a small performance cost and can interact
+// with plugins in unexpected ways. HTMLHelper's content.prepare works on its
+// own isolated object (it never touches the shared module object), which
+// avoids leaking raw content into other output on the page.
+if ($hkpopupContent !== '' && (int) $params->get('prepare_content', 0) === 1) {
+    PluginHelper::importPlugin('content');
+    $hkpopupContent = HTMLHelper::_('content.prepare', $hkpopupContent, '', 'mod_simplepopup.content');
+}
+
 $linkUrl         = trim((string) $params->get('link_url', ''));
 $linkTargetBlank = (int) $params->get('link_target_blank', 1);
 
@@ -190,7 +205,7 @@ if ($linkColor !== '') {
         <?php endif; ?>
 
         <div class="hkpopup-content">
-            <?php echo $content; ?>
+            <?php echo $hkpopupContent; ?>
         </div>
 
     </div>
