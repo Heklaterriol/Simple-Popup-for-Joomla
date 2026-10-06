@@ -28,6 +28,7 @@ Then, under **Content → Site Modules**, create a new module of type
 | Content | HTML editor (WYSIWYG) for the popup content |
 | Popup link (optional) | Makes the whole popup a link. The close button stays separately clickable; other links/buttons *inside* the editor content become unreachable though, since the click area covers everything |
 | Open link in a new tab | Only shown once a link is set |
+| Apply content plugins | Off by default. Runs the content through Joomla's content plugins (e.g. `{emailcloak}`), the same way article text is processed; module content is otherwise not processed automatically |
 
 ### Options
 
@@ -98,6 +99,8 @@ A few decisions that shaped the build:
   background, remember to also set a lighter text/link colour.
 
 ## Version history
+- **1.5.0** – New option "Apply content plugins" (off by default) to process plugin tags such as
+  `{emailcloak}` in the popup content. Removed the unused custom field class `PopupeditorField`.
 - **1.4.0** – New field "Max. width (pixels)" for relative widths. Fix manifest file for Joomla! update routine.
 - **1.3.0** – Add Joomla native update routine.
 - **1.2.0** – minor fixes. Change of the mod structure and renaming to 
