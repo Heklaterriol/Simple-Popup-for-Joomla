@@ -17,7 +17,7 @@
         </tags>
         <maintainer>Hekla</maintainer>
         <maintainerurl>github.com/Heklaterriol/Simple-Popup-for-Joomla/</maintainerurl>
-        <targetplatform name="joomla" version="^(5\.[4-9].*|6\..*)$"/>
+        <targetplatform name="joomla" version="(5\.[4-9]|6\.[0-9]+)"/>
         <php_minimum>8.1</php_minimum>
         <sha256>31a7b7bba436b91e7ee2d6c7121648bee367a505ea64290dc657da5523703f33</sha256>
         <sha384>c47af263953d208eb2169238a8bc35867d82e8c7c2493d35a9c44987aa74cd6193c7833e15df71552acf389f017135b7</sha384>
