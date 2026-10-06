@@ -19,9 +19,9 @@
         <maintainerurl>github.com/Heklaterriol/Simple-Popup-for-Joomla/</maintainerurl>
         <targetplatform name="joomla" version="(5\.[4-9]|6\.[0-9]+)"/>
         <php_minimum>8.1</php_minimum>
-        <sha256>f41d49dcda095cd29cbd3b3262e1cadfcbdca0aa49c34b2e73cc71fd91f62ff9</sha256>
-        <sha384>c47af263953d208eb2169238a8bc35867d82e8c7c2493d35a9c44987aa74cd6193c7833e15df71552acf389f017135b7</sha384>
-        <sha512>262a8380610eb305af657f017d52ef8567dc7dba7a6950717e597f9ffea67c57f69053c9db8198ac12698760c3fe2f053e09fa528f16fa92a9651f1e8a243eb8</sha512>
+        <sha256>edca6f25597faf82e2d0ce16856c25dc270c9cd7a4b715446909faae14f12367</sha256>
+        <sha384>b9d8911331c8388468ce1deb499375bea8568b64147cd76f40daa307f4173839b3e3b031d00ac8cb27070b9547475c92</sha384>
+        <sha512>ca75d0bb3bb6475eedea21c031e28f7f942c3760a1ebd5d4ca501d783f9421f89d971431f04f079ecf5467edccc346d60fa3f87a65f62387a68af39588438ed6</sha512>
         <date>2026-10-05 12:00</date>
         <notes>Simple Popup Module v1.4 for Joomla! 5.4.x and Joomla! 6.x. Requires PHP 8.1 or newer.</notes>
         <changes>New field "Max. width (pixels)" for relative widths (%): popup scales with the screen but never exceeds the given pixel width.</changes>
